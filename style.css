@@ -168,7 +168,7 @@ body {
 .card {
 	background-color: white;
 	border-radius: 1rem;
-	box-shadow: 0.1rem 0.1rem 5px #0000008a;
+	box-shadow: 0.1rem 0.1rem 5px #e0dede8a;
 	padding: 0.5rem;
 	border-left: 0.2rem solid blue;
 	display: grid;
@@ -183,6 +183,7 @@ body {
 
 #news_section {
 	grid-template-rows: 1fr 1fr 1fr;
+	margin-top: 0.8rem;
 }
 
 .news {
@@ -220,6 +221,7 @@ main svg:hover {
 }
 
 .card_action_container {
+	margin: 0 0.3rem 0.3rem 0;
 	height: 30px;
 }
 
@@ -245,7 +247,7 @@ main {
 	display: grid;
 	max-height: 100%;
 	grid-template: 1fr 9fr 9fr 9fr / 1fr 1fr;
-	gap: 1rem;
+	gap: 1.4rem;
 	margin: 0 1rem 1rem;
 }
 
@@ -256,5 +258,5 @@ main>span {
 
 .side {
 	grid-template-rows: 1fr 1fr;
-	border-left: 0.2rem solid red;
+	border-left: none;
 }
