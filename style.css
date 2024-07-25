@@ -66,12 +66,12 @@ body {
 .hbar_personal {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows:0.5fr;
-	align-items:center;
+	grid-template-rows: 0.5fr;
+	align-items: center;
 	text-align: center;
 	width: 50%;
-	margin-right:2rem;
-	margin-left:auto;
+	margin-right: 2rem;
+	margin-left: auto;
 }
 
 .hbar_notif {
@@ -79,16 +79,19 @@ body {
 	height: 30px;
 }
 
-.username{
-	width:100px;
+.username {
+	width: 100px;
+	height: 30px;
+	margin-top: 0.5rem;
 }
 
 .icon {
-	background-color: orange;
-	width: 30px;
+	width: 100%;
 	height: 30px;
-	border-radius: 50%;
+	border-left: 0.1rem solid lightslategray;
+	border-right: 0.1rem solid lightslategray;
 	display: block;
+	padding-bottom: 0.5rem;
 }
 
 
@@ -174,7 +177,10 @@ body {
 	border-bottom: 0.1rem solid grey;
 }
 
+.card_action {
+	height: 30px;
 
+}
 
 .card_action,
 .card_action_container {
