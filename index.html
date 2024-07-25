@@ -6,12 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
+	<script defer type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
 	<div class="room" id="hbar">
 		<div class="hbar_search">
-			<input type="text" placeholder="Looking for somethin' ?">🔎
+			<input type="text" placeholder="Looking for somethin' ?">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 28" height="30">
+				<title>magnify</title>
+				<path
+					d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+			</svg>
 		</div>
 		<div class="hbar_personal">
 			<div class="hbar_notif">
@@ -26,7 +32,9 @@
 			</div>
 			<span class="username"> John Doe </span>
 		</div>
-		<div>a</div>
+		<div class="hbar_info">
+			<span class="hbar_greet">Welcome @Raaynbo, what is our next task ?</span>
+		</div>
 		<div class="hbar_action">
 			<span class="hbar_button">New</span>
 			<span class="hbar_button">Upload</span>
@@ -51,7 +59,7 @@
 	</div>
 	<div class="room" id="content">
 		<main>
-			<span class="section_title"> Section title </span>
+			<span class="section_title"> Projects </span>
 			<div class="card">
 				<span class="card_title">titlecard</span>
 				<div class="card_content">sdhaklshd ashk alkshdah alsh alhd alh</div>
@@ -193,7 +201,7 @@
 		</main>
 		<div class="sidecontent">
 			<div class="section">
-				<span class="section_title"> Section title </span>
+				<span class="section_title"> Article </span>
 				<div class="card side " id="news_section">
 					<div class="news">
 						<span class="news_title">title</span>
@@ -212,13 +220,46 @@
 				</div>
 			</div>
 			<div class="section">
-				<span class="section_title"> Section title </span>
+				<span class="section_title"> Community project </span>
 				<div class="card side">
-					<div class="side_card_content">aj</div>
-					<div class="side_card_content">aj</div>
-					<div class="side_card_content">aj[</div>
-					<div class="side_card_content">ais</div>
-					<div class="side_card_content">asd</div>
+					<div class="side_card_content">
+						<div class="feature_card">Project name</div>
+						<div class="card_action_container disabled" id="pjtct1">
+							<span class="card_action">
+								<svg xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 26 28" height="30">
+									<title>Check repository</title>
+									<path
+										d="M11.6 3C13.1 4.3 14 6.1 14 8S13.1 11.7 11.6 13L10 12.4C11.3 11.4 12 9.7 12 8S11.3 4.6 10 3.6L11.6 3M4.4 3L6 3.6C4.7 4.6 4 6.3 4 8S4.7 11.4 6 12.4L4.4 13C2.9 11.7 2 9.9 2 8S2.9 4.3 4.4 3M22 6V18C22 19.11 21.11 20 20 20H4C2.9 20 2 19.11 2 18V15H4V18H20V6H16.03V4H20C21.11 4 22 4.89 22 6Z" />
+								</svg></span>
+							<span class="card_action">
+								<svg xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 26 28" height="30">
+									<title>open project</title>
+									<path
+										d="M12,10L8,14H11V20H13V14H16M19,4H5C3.89,4 3,4.9 3,6V18A2,2 0 0,0 5,20H9V18H5V8H19V18H15V20H19A2,2 0 0,0 21,18V6A2,2 0 0,0 19,4Z" />
+								</svg></span>
+						</div>
+					</div>
+					<div class="side_card_content">
+						<div class="feature_card">Project name</div>
+						<div class="card_action_container disabled" id="pjtct1">
+							<span class="card_action">
+								<svg xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 26 28" height="30">
+									<title>Check repository</title>
+									<path
+										d="M11.6 3C13.1 4.3 14 6.1 14 8S13.1 11.7 11.6 13L10 12.4C11.3 11.4 12 9.7 12 8S11.3 4.6 10 3.6L11.6 3M4.4 3L6 3.6C4.7 4.6 4 6.3 4 8S4.7 11.4 6 12.4L4.4 13C2.9 11.7 2 9.9 2 8S2.9 4.3 4.4 3M22 6V18C22 19.11 21.11 20 20 20H4C2.9 20 2 19.11 2 18V15H4V18H20V6H16.03V4H20C21.11 4 22 4.89 22 6Z" />
+								</svg></span>
+							<span class="card_action">
+								<svg xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 26 28" height="30">
+									<title>open project</title>
+									<path
+										d="M12,10L8,14H11V20H13V14H16M19,4H5C3.89,4 3,4.9 3,6V18A2,2 0 0,0 5,20H9V18H5V8H19V18H15V20H19A2,2 0 0,0 21,18V6A2,2 0 0,0 19,4Z" />
+								</svg></span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
